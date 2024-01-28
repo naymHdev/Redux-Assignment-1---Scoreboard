@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LWS Assignment 1 - Scoreboard</title>
+    <title>Redux Assignment 1 - Scoreboard</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/5.0.1/redux.legacy-esm.js"></script>
   </head>
 
   <body>
@@ -34,15 +35,25 @@
           <div class="inc-dec">
             <form class="incrementForm">
               <h4>Increment</h4>
-              <input type="number" name="increment" class="lws-increment" />
+              <input
+                id="increment"
+                type="number"
+                name="increment"
+                class="lws-increment"
+              />
             </form>
             <form class="decrementForm">
               <h4>Decrement</h4>
-              <input type="number" name="decrement" class="lws-decrement" />
+              <input
+                id="decrement"
+                type="number"
+                name="decrement"
+                class="lws-decrement"
+              />
             </form>
           </div>
           <div class="numbers">
-            <h2 class="lws-singleResult">120</h2>
+            <h2 id="counter" class="lws-singleResult">120</h2>
           </div>
         </div>
       </div>
